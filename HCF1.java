@@ -1,0 +1,29 @@
+import java.util.*;
+class HCF1
+{
+  public static void main(String args[])
+{
+  Scanner sc=new Scanner(System.in);
+  int i=1;
+  int hf=0;
+  System.out.println("enter the value of a");
+  int a=sc.nextInt();
+  System.out.println("enetr the value of b");
+  int b=sc.nextInt();
+  System.out.println("enetr the value of c");
+  int c=sc.nextInt();
+  
+  
+  while(i<=a || i<=b || i<=c)
+  
+  {
+     if(a%i==0 && b%i==0 && c%i==0 )
+        hf=i;
+       i++;
+  }
+  
+
+    System.out.println("Hcf of three no = " +hf);
+ 
+}
+}
